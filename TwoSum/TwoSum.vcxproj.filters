@@ -15,8 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TwoSum.cpp">
+    <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="TwoSum.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shell-sort.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoSum-II.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="head.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

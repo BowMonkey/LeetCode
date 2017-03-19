@@ -1,19 +1,7 @@
 
-#include<stdio.h>
-#include<stdlib.h>
 
-int *twoSum(int *nums, int numsSize, int target);
-void sort(int *array, int size);
+#include"head.h"
 
-
-int main(void)
-{
-	int *p;
-	int target = 200;
-	int nums[] = { 150,24,79,50,88,345,3};
-	p = twoSum(nums, sizeof(nums) / sizeof(nums[0]), target);
-	return 0;
-}
 
 int *twoSum(int *nums, int numsSize, int target)
 {
@@ -68,26 +56,3 @@ int *twoSum(int *nums, int numsSize, int target)
 	return answer;
 }
 
-//Ï£¶ûÅÅĞò
-void sort(int *array, int size)
-{
-	int h = 1;
-	int i, j, temp;
-	while (h < size / 3)
-	{
-		h = 3 * h + 1;
-	}
-	while (h >= 1)
-	{
-		for (i = h; i < size; i++)
-		{
-			for (j = i; j >= h && array[j] <= array[j - h]; j -= h)
-			{
-				temp = array[j];
-				array[j] = array[j - h];
-				array[j - h] = temp;
-			}
-		}
-		h = h / 3;
-	}
-}
